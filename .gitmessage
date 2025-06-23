@@ -1,0 +1,40 @@
+# Title: Summary, imperative, start upper case, don't end with a period
+# No more than 50 chars. #### 50 chars is here: #
+ 
+# Remember blank line between title and body.
+
+# Body: Explain *what* and *why* (not *how*). Include task ID (Jira issue).
+# Wrap at 72 chars. ################################## which is here: #
+
+
+# At the end: Include Co-authored-by for all contributors. 
+# Include at least one empty line before it. Format: 
+# Co-authored-by: name <user@users.noreply.github.com>
+#
+# How to Write a Git Commit Message:
+# https://chris.beams.io/posts/git-commit/
+#
+# 1.Separate subject from body with a blank line
+# 2. Limit the subject line to 50 characters
+# 3. Capitalize the subject line
+# 4. Do not end the subject line with a period
+# 5. Use the imperative mood in the subject line
+# 6. Wrap the body at 72 characters
+# 7. Use the body to explain what and why vs. how
+
+# Git commit style
+# Add: Create a capability e.g. feature, test, dependency.
+# Drop: Delete a capability e.g. feature, test, dependency.
+# Fix: Fix an issue e.g. bug, typo, accident, misstatement.
+# Bump: Increase the version of something e.g. a dependency.
+# Make: Change the build process, or tools, or infrastructure.
+# Start: Begin doing something; e.g. enable a toggle, feature flag, etc.
+# Update: Continue doing something; e.g. enable a toggle, feature flag, etc.
+# Stop: End doing something; e.g. disable a toggle, feature flag, etc.
+# Optimize: A change that MUST be just about performance, e.g. speed up code.
+# Document: A change that MUST be only in the documentation, e.g. help files.
+# Refactor: A change that MUST be just refactoring.
+# Reformat: A change that MUST be just formatting, e.g. change spaces.
+# Rearrange: A change that MUST be just arranging, e.g. change layout.
+# Redraw: A change that MUST be just visual, e.g. change a graphic, image, icon, etc.
+# Reword: A change that MUST be just textual, e.g. change a comment, label, doc, etc.
