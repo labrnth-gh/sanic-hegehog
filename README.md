@@ -1,6 +1,8 @@
 # nixos-edge
 **_Install Edge device NixOS configuration_**
 
+<img src="https://raw.githubusercontent.com/labrnth-gh/sanic-hegehog/refs/heads/0001/logo.webp" width="150" height="150">
+
 
 ## README
 

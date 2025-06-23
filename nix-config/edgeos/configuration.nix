@@ -81,6 +81,24 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
+  # Deploy the demo appliance using environment.etc
+  environment.etc."appliances/http_telemetry_demo.py" = {
+    source = ./src/http_telemetry_demo.py;
+    mode = "0755";
+  };
+
+  systemd.services.demo-script = {
+    description = "Run telemetry demo on boot";
+    after = [ "network.target" ];
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig.ExecStart = "${pkgs.python3}/bin/python3 /etc/appliances/http_telemetry_demo.py";
+    serviceConfig.Restart = "always";
+    serviceConfig.User = "root";
+  };
+
+  # Enable the service
+  systemd.services.demo-script.enable = true;
+
   system.stateVersion = "25.05";
 
 }
